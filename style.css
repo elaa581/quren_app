@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.app-vedio {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.vedio {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  background-color: #000;
+}
+
+.vedio-player {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footer-text h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #8bc34a;
+}
+
+.description {
+  font-size: 13px;
+  color: #ccc;
+}
+
+.img-marq {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: #f1f1f1;
+}
+
+.icon-action {
+  font-size: 24px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.icon-action:hover {
+  color: #ff9800;
+  transform: scale(1.2);
+}
+
+marquee {
+  max-width: 150px;
+  font-style: italic;
+  color: #ccc;
+}

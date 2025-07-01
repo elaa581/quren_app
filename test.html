@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran app</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-vedio">
+        <div class="vedio">
+            <video src="video/K1.mp4" class="vedio-player"></video>
+            <div class="footer">
+                <div class="footer-text">
+                    <h3>Elaa ben yahia</h3>
+                    <p class="description">hello word</p>
+                    <div class="img-marq">
+                        <i class="bi bi-download icon-action"></i>
+                        <marquee> heello</marquee>
+                    </div>
+                </div>
+              <i class="bi bi-play-circle-fill icon-action"></i>
+            </div>
+        </div>
+
+        <div class="vedio">
+            <video src="video/K2.mp4" class="vedio-player"></video>
+            <div class="footer">
+                <div class="footer-text">
+                    <h3>Elaa ben yahia</h3>
+                    <p class="description">hello word</p>
+                    <div class="img-marq">
+                        <i class="bi bi-download icon-action"></i>
+                        <marquee> heello</marquee>
+                    </div>
+                </div>
+                <i class="bi bi-play-circle-fill icon-action"></i>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const vedios = document.querySelectorAll('video');
+        for (const video of vedios) {
+            video.addEventListener('click', function () {
+                if (video.paused) {
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            });
+        }
+    </script>
+</body>
+</html>
